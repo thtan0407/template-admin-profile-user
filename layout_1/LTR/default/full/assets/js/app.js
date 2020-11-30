@@ -7,7 +7,7 @@
 * ---------------------------------------------------------------------------- */
 $(function () {
     document.addEventListener('DOMContentLoaded', function () {
-
+        alert(1);
         // Disable CSS transitions on page load
         $('body').addClass('no-transitions');
 
@@ -630,7 +630,9 @@ $(function () {
 })
 
 jQuery(document).ready(function ($) {
-    $('.datetimepicker').datepicker();
+    if ($('.datetimepicker').length) {
+        $('.datetimepicker').datepicker();
+    }
     $('.search-service-name').select2();
     $('.select-2').select2();
     $('.select-staff').select2();

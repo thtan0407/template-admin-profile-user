@@ -1375,6 +1375,7 @@
 
 .theme-profile a[class*=text] {
     transition: .2s all ease-out;
+    color: var(--dark);
 }
 
 .theme-profile .btn:hover,
@@ -1502,4 +1503,32 @@
 
 .theme-profile .sidebar-category .category-title {
     border-bottom-color: #ddd;
+}
+
+.theme-profile .panel-title {
+    font-weight: 600;
+}
+
+.theme-profile .category-title > span {
+    font-weight: 600; 
+}
+
+.custom-panel .panel .panel-title > a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.custom-panel .panel {
+    margin-bottom: 0;
+    box-shadow: none;
+    border: 0;
+}
+
+
+.custom-panel .panel .panel-title > a .caret {
+    transition: .3s all linear;
+}
+
+.custom-panel .panel .panel-title > a[aria-expanded="false"] > span {
+    transform: rotate(180deg);
 }
